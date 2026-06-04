@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<style>
+.my-dropdown{
+  width:auto;
+  float:left;
+}
+</style>
+<script>
+$('.hamburger-position .my-dropdown').hover(function(){
+  $(this).addClass('open').css({
+    'border':'1px solid red'
+  });
+});
+</script>
+
+<div class="container">
+<div class="row hamburger-position">
+  <div class="col-md-12">
+    <div class="dropdown my-dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown">
+        <i class="glyphicon glyphicon-menu-hamburger"></i>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">HTML</a>
+        </li>
+        <li><a href="#">CSS</a>
+        </li>
+        <li><a href="#">JavaScript</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  
+</div>
